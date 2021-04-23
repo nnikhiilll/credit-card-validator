@@ -1,0 +1,19 @@
+# main.py
+number=input("Enter a credit card number: ")
+w=len(number)
+q=0
+for i in range(w):
+  q+=int(number[i])
+print("The sum of the digits is "+str(q)+".")
+z=0
+for i in range(w):
+  if i%2==0:
+    z+=int(number[i])*2
+  else:
+    z+=int(number[i])
+print("The sum of the digits, with every other digit multiplied by 2 is "+str(z)+".")
+
+if z%10==0:
+  print("Valid")
+else:
+  print("Invalid")
